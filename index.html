@@ -1,8 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>我的第一个博客</title>
-</head>
-<body>我的博客
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script src="./marked.js"></script>
+    </head>
+   
+    <body>
+        <div id="content"></div>
+        
+        <script>
+            var markdown = `
+# 我的博客
+## 这是内容
+`;
+            
+            var html = marked(markdown);
+            document.getElementById("content").innerHTML = html;
+        </script>
+    </body>
 </html>
