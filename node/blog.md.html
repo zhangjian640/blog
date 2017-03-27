@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title></title>
+        <link href="./type.css">
+        <script src="./marked.js"></script>
+        <style>
+            body{
+                padding:16px;
+            }
+            img{
+                max-width:100%;
+            }
+        </style>
+    </head>
+   
+    <body>
+        <div id="content">
+## 我是markdown
+        </div>
+        
+        <script>
+            var content = document.getElementById("content");
+            var markdown = content.innerHTML;
+            var html = marked(markdown);
+           content.innerHTML = html;
+        </script>
+    </body>
+</html>
