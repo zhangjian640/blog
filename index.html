@@ -2,9 +2,18 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title></title>
         <link href="./type.css">
         <script src="./marked.js"></script>
+        <style>
+            body{
+                padding:16px;
+            }
+            img{
+                max-width:100%;
+            }
+        </style>
     </head>
    
     <body>
@@ -14,6 +23,10 @@
             var markdown = `
 # 我的博客
 ## 这是内容
+
+
+<img src='https://visualhunt.com/photos/l/7/screens-computer-keyboard-coffee-mugs.jpg'>
+
 `;
             
             var html = marked(markdown);
