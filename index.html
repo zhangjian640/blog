@@ -9,16 +9,26 @@
         <style>
             body{
                 padding:16px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
             img{
                 max-width:100%;
+            }
+            #content{
+                width: 800px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
             }
         </style>
     </head>
    
     <body>
         <div id="content"></div>
-        
         <script>
             var markdown = `
 # 我的博客
@@ -26,6 +36,11 @@
 > 我的第一个博客
 
 <img src='https://visualhunt.com/photos/l/7/screens-computer-keyboard-coffee-mugs.jpg'>
+
+
+[博客1](template/blog.md.html)
+
+[博客2](template/blog2.md.html)
 
 `;
             
